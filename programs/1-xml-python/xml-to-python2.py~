@@ -1,0 +1,7 @@
+multi = open(homedir+"/data/edited/multiLine.xml", "r")
+multi_l = multi.readlines()
+
+with open(homedir+"output/test_multi.csv", "w") as f:
+    # obtain header info
+    firstrow = multi_l[0]
+    d0 = ET.ElementTree(ET.fromstring(firstrow)).getroot()

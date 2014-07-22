@@ -1,0 +1,193 @@
+## python scratch
+#headers = ['identifier', 'messagecount', 'timestamp', 'column', 'row', 'colour', 'value']
+headers = ['timestamp', 'identifier', 'messagecount', 'column', 'colour', 'value', 'row']
+
+## break this file before continues too long!
+gabba
+
+
+
+xmlfile2 = open("/Users/pawel/github/f1challenge/data/edited/multiLine.xml", "r")
+row = xmlfile2.readlines()
+print row
+# test
+for line in row:
+    gg = line
+
+print gg
+
+import csv
+
+csv_file_name = 'out.csv'
+
+with open('names.csv', 'w') as f:
+    f_csv = csv.DictWriter(f, headers)
+    f_csv.writeheader()
+    for line in names_l:
+        dd = ET.ElementTree(ET.fromstring(line)).getroot()
+        a = OrderedDict(dd.attrib)
+        print a
+        for node in dd.iter("data"):
+            b = OrderedDict(node.attrib)
+            b.update(a)
+            print b
+            sss
+            b2 = node.attrib
+            b2.update(dd.attrib)
+            print b2
+            #x = a.copy()
+            #x.update(b)
+            #print x
+            #print x.items()
+            print type(b2) 
+            #print type(x.items)
+            #print type(dd.attrib)
+            #stop
+            #print dict(x)
+            f_csv.writerow(b2)
+
+
+
+
+## this works!
+headers = ['Symbol', 'Price', 'Date', 'Time', 'Change', 'Volume']
+rows = [{'Symbol':'AA', 'Price':39.48, 'Date':'6/11/2007',
+          'Time':'9:36am', 'Change':-0.18, 'Volume':181800},
+        {'Symbol':'AIG', 'Price': 71.38, 'Date':'6/11/2007',
+          'Time':'9:36am', 'Change':-0.15, 'Volume': 195500},
+        {'Symbol':'AXP', 'Price': 62.58, 'Date':'6/11/2007',
+          'Time':'9:36am', 'Change':-0.46, 'Volume': 935000},
+        ]
+
+with open('out2.csv', 'w') as f:
+    f_csv = csv.DictWriter(f, headers)
+    f_csv.writeheader()
+    for row in rows:
+        f_csv.writerow(row)
+
+
+for line in f1practice:
+    if re.match("(.*)informationvalid(.*)", line):
+        print line
+
+##
+headers = ['time','id', 'mc', 'col', 'color', 'value', 'row']
+with open('out3.csv', 'w') as f:
+    f_csv = csv.DictWriter(f, headers)
+    f_csv.writeheader()
+    for row in rows:
+        f_csv.writerow(row)
+
+with open(csv_file_name, 'w') as file_:
+    writer = csv.writer(file_, delimiter=",")
+    for line in row:
+        data = ET.ElementTree(ET.fromstring(line)).getroot()
+        print "-", data
+        print ":", data.attrib
+        print "::", data.tag
+        for node in data.iter():
+            print ">>>", node.tag, node.attrib
+            #writer.writerow(data)
+
+
+## OUTPUT
+## data
+- <Element 'transaction' at 0x1100e9a10>
+
+## data.attrib
+: {'timestamp': '10:49:56.032', 'identifier': '101', 'messagecount': '9617'}
+
+## data.tag
+:: transaction
+
+## node.tag
+>>> transaction {'timestamp': '10:49:56.032', 'identifier': '101', 'messagecount': '9617'}
+## node.attrib
+>>> data {'column': '1', 'colour': 'CYAN', 'value': '1', 'row': '1'}
+
+
+
+- <Element 'transaction' at 0x1100e9b10>
+: {'timestamp': '11:49:56.032', 'identifier': '101', 'messagecount': '9618'}
+:: transaction
+>>> transaction {'timestamp': '11:49:56.032', 'identifier': '101', 'messagecount': '9618'}
+>>> data {'column': '1', 'colour': 'CYAN', 'value': '2', 'row': '2'}
+- <Element 'transaction' at 0x1100e9c10>
+: {'timestamp': '12:52:54.074', 'identifier': '101', 'messagecount': '10325'}
+:: transaction
+>>> transaction {'timestamp': '12:52:54.074', 'identifier': '101', 'messagecount': '10325'}
+>>> data {'informationvalid': 'true', 'sessionstate': 'started'}
+- <Element 'transaction' at 0x1100e9d10>
+: {'timestamp': '13:49:56.033', 'identifier': '101', 'messagecount': '9619'}
+:: transaction
+>>> transaction {'timestamp': '13:49:56.033', 'identifier': '101', 'messagecount': '9619'}
+>>> data {'column': '1', 'colour': 'CYAN', 'value': '3', 'row': '3'}
+
+
+
+
+## sc
+with open('names.csv', 'w') as f:
+    f_csv = csv.DictWriter(f, headers)
+    f_csv.writeheader()
+    for line in names_l:
+        dd = ET.ElementTree(ET.fromstring(line)).getroot()
+        f_csv.writerow(dd.attrib)
+        for node in dd.iter():
+            f_csv.writerow(node.attrib)        
+
+
+
+## good
+with open('names.csv', 'w') as f:
+    f_csv = csv.DictWriter(f, headers)
+    f_csv.writeheader()
+    for line in names_l:
+        dd = ET.ElementTree(ET.fromstring(line)).getroot()
+        a = dd.attrib
+        print a
+        for node in dd.iter("data"):
+            b = node.attrib
+            print b
+            z = dict(a.items() + b.items())
+            print z
+            f_csv.writerows(z)
+
+
+
+
+
+
+
+
+
+f1practice = open("/Users/pawel/github/f1challenge/data/F1_Practice.txt", "r")
+
+for line in f1practice:
+    if re.match("(.*)informationvalid(.*)", line):
+        print line
+
+## output        
+<transaction identifier="101" messagecount="9616" timestamp="10:49:56.031"><data informationvalid="true" sessionstate="inactive"/></transaction>
+
+<transaction identifier="103" messagecount="10068" timestamp="10:49:56.387"><data informationvalid="true"/></transaction>
+
+<transaction identifier="104" messagecount="10120" timestamp="10:49:56.407"><data informationvalid="true"/></transaction>
+
+<transaction identifier="101" messagecount="10325" timestamp="10:52:54.074"><data informationvalid="true" sessionstate="started"/></transaction>
+
+<transaction identifier="103" messagecount="10325" timestamp="10:52:54.088"><data informationvalid="true"/></transaction>
+
+<transaction identifier="104" messagecount="10325" timestamp="10:52:54.097"><data informationvalid="true"/></transaction>
+
+<transaction identifier="101" messagecount="42168" timestamp="11:52:54.284"><data informationvalid="true" sessionstate="finished"/></transaction>
+
+<transaction identifier="103" messagecount="42168" timestamp="11:52:54.290"><data informationvalid="true"/></transaction>
+
+<transaction identifier="104" messagecount="42168" timestamp="11:52:54.295"><data informationvalid="true"/></transaction>
+
+
+
+
+            
+

@@ -1,0 +1,42 @@
+0<transaction identifier="101" messagecount="63421" timestamp="12:16:48.181"><data informationvalid="true" sessionstate="inactive"/></transaction>
+445<transaction identifier="102" messagecount="63866" timestamp="12:16:48.224"><data informationvalid="true"/></transaction>
+504<transaction identifier="104" messagecount="63926" timestamp="12:16:48.247"><data informationvalid="true"/></transaction>
+509<transaction identifier="104" messagecount="63930" timestamp="12:20:07.243"><data informationvalid="true"/></transaction>
+510<transaction identifier="101" messagecount="63930" timestamp="12:20:07.258"><data informationvalid="true" sessionstate="started"/></transaction>
+511<transaction identifier="102" messagecount="63930" timestamp="12:20:07.261"><data informationvalid="true"/></transaction>
+1672<transaction identifier="104" messagecount="66853" timestamp="12:24:36.550"><data informationvalid="true"/></transaction>
+1673<transaction identifier="101" messagecount="66853" timestamp="12:24:36.563"><data informationvalid="true" sessionstate="aborted"/></transaction>
+1674<transaction identifier="102" messagecount="66853" timestamp="12:24:36.566"><data informationvalid="true"/></transaction>
+2374<transaction identifier="104" messagecount="68565" timestamp="12:31:07.379"><data informationvalid="true"/></transaction>
+2375<transaction identifier="101" messagecount="68565" timestamp="12:31:07.393"><data informationvalid="true" sessionstate="started"/></transaction>
+2376<transaction identifier="102" messagecount="68565" timestamp="12:31:07.395"><data informationvalid="true"/></transaction>
+7503<transaction identifier="104" messagecount="78627" timestamp="12:44:38.560"><data informationvalid="true"/></transaction>
+7504<transaction identifier="101" messagecount="78627" timestamp="12:44:38.573"><data informationvalid="true" sessionstate="finished"/></transaction>
+7505<transaction identifier="102" messagecount="78627" timestamp="12:44:38.576"><data informationvalid="true"/></transaction>
+9053<transaction identifier="104" messagecount="81173" timestamp="12:50:15.689"><data informationvalid="true"/></transaction>
+9054<transaction identifier="101" messagecount="81173" timestamp="12:50:15.702"><data informationvalid="true" sessionstate="inactive"/></transaction>
+9055<transaction identifier="102" messagecount="81173" timestamp="12:50:15.705"><data informationvalid="true"/></transaction>
+9231<transaction identifier="104" messagecount="81616" timestamp="12:52:07.347"><data informationvalid="true"/></transaction>
+9232<transaction identifier="101" messagecount="81616" timestamp="12:52:07.378"><data informationvalid="true" sessionstate="started"/></transaction>
+9233<transaction identifier="102" messagecount="81616" timestamp="12:52:07.381"><data informationvalid="true"/></transaction>
+12776<transaction identifier="104" messagecount="90236" timestamp="13:07:07.476"><data informationvalid="true"/></transaction>
+12777<transaction identifier="101" messagecount="90236" timestamp="13:07:07.490"><data informationvalid="true" sessionstate="finished"/></transaction>
+12778<transaction identifier="102" messagecount="90236" timestamp="13:07:07.493"><data informationvalid="true"/></transaction>
+13918<transaction identifier="104" messagecount="92454" timestamp="13:13:16.308"><data informationvalid="true"/></transaction>
+13919<transaction identifier="101" messagecount="92454" timestamp="13:13:16.322"><data informationvalid="true" sessionstate="inactive"/></transaction>
+13920<transaction identifier="102" messagecount="92454" timestamp="13:13:16.324"><data informationvalid="true"/></transaction>
+14373<transaction identifier="104" messagecount="93212" timestamp="13:15:07.477"><data informationvalid="true"/></transaction>
+14374<transaction identifier="101" messagecount="93212" timestamp="13:15:07.490"><data informationvalid="true" sessionstate="started"/></transaction>
+14375<transaction identifier="102" messagecount="93212" timestamp="13:15:07.493"><data informationvalid="true"/></transaction>
+14976<transaction identifier="104" messagecount="95107" timestamp="13:18:57.804"><data informationvalid="true"/></transaction>
+14977<transaction identifier="101" messagecount="95107" timestamp="13:18:57.818"><data informationvalid="true" sessionstate="aborted"/></transaction>
+14978<transaction identifier="102" messagecount="95107" timestamp="13:18:57.821"><data informationvalid="true"/></transaction>
+15416<transaction identifier="104" messagecount="96303" timestamp="13:23:07.304"><data informationvalid="true"/></transaction>
+15417<transaction identifier="101" messagecount="96303" timestamp="13:23:07.318"><data informationvalid="true" sessionstate="started"/></transaction>
+15418<transaction identifier="102" messagecount="96303" timestamp="13:23:07.321"><data informationvalid="true"/></transaction>
+16828<transaction identifier="104" messagecount="100470" timestamp="13:31:17.323"><data informationvalid="true"/></transaction>
+16829<transaction identifier="101" messagecount="100470" timestamp="13:31:17.337"><data informationvalid="true" sessionstate="finished"/></transaction>
+16830<transaction identifier="102" messagecount="100470" timestamp="13:31:17.340"><data informationvalid="true"/></transaction>
+18648<transaction identifier="101" messagecount="104064" timestamp="14:03:33.665"><data informationvalid="true" sessionstate="finished"/></transaction>
+19224<transaction identifier="102" messagecount="104640" timestamp="14:03:33.719"><data informationvalid="true"/></transaction>
+19284<transaction identifier="104" messagecount="104701" timestamp="14:03:33.737"><data informationvalid="true"/></transaction>

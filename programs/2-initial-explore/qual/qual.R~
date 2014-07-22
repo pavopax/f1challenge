@@ -1,0 +1,21 @@
+###############################################################################
+## WHAT		 
+## HOW	  	  
+## NOTES	
+## AUTHOR	Pawel Paczuski [github.com/pavopax]
+###############################################################################
+
+
+
+
+## DATA STEPS
+homeDir <- "/Users/pawel/github/f1challenge/"
+dataDir <- paste0(homeDir, "/data")
+
+qual <- read.csv(paste0(dataDir, "/new/qual_data.csv"), head=TRUE)
+
+
+
+
+
+## PRINTING
