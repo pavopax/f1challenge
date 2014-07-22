@@ -12,7 +12,7 @@
 `<transaction identifier="101" messagecount="10365" timestamp="10:52:59.663"><data column="3" row="4" colour="WHITE" value="M. CHILTON"/></transaction>`<br>
 `<transaction identifier="101" messagecount="10366" timestamp="10:52:59.672"><data column="2" row="5" colour="RED" value="6"/></transaction>`<br>
 `<transaction identifier="101" messagecount="10367" timestamp="10:52:59.675"><data column="3" row="5" colour="WHITE" value="N. ROSBERG"/></transaction>`<br>
-
+[...]<br>
 
 ## to
 [a data frame]
