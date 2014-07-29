@@ -23,7 +23,7 @@ Using python, parse xml fragment to obtain dataframe, and analyze in R.
 Some speeds, by Driver and Location (according to official names):
 
 |Inter. 1| |Inter. 2| |Control | |Speed-trap| |  *  |
-|----|----|----|----|----|----|----|------|-----|
+|----|----|----|----|----|----|----|------|----:|
 |RAI |284 |BIA |273 |MAS |286 |KVY |337   |    9|
 |ALO |279 |SUT |270 |HAM |286 |VER |335   |   13|
 |HAM |280 |GRO |267 |BOT |285 |HAM |331   | <NA>|
@@ -32,11 +32,11 @@ Some speeds, by Driver and Location (according to official names):
 |GUT |275 |RAI |265 |PER |281 |ROS |331   | <NA>|
 
 Last column:
-Cars on track
+Cars on track<br>
 Cars in pits
 
 Inter. = Intermediate
 
 ## next steps:
-visualize dashboard with D3. ref:
+visualize dashboard with D3. ref:<br>
 http://bl.ocks.org/LeeMendelowitz/11383724

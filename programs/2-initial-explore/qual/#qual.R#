@@ -33,6 +33,7 @@ speed2 <- speed %>% group_by(column, row) %>%
 
 ## now, to nice table
 speedx <- dcast(speed2, row ~ column, value.var = "last")
+speedx <- speedx[,-1]
 
 
 
