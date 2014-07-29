@@ -22,14 +22,14 @@ Using python, parse xml fragment to obtain dataframe, and analyze in R.
 ## to, eg:
 Some speeds, by Driver and Location (according to official names):
 
-|Inter. 1 |Inter. 2 |Control  |Speed-trap |  *  |
+|Inter. 1||Inter. 2||Control ||Speed-trap||  *  |
 |---------|---------|---------|-----------|-----|
-|RAI  284 |BIA  273 |MAS  286 |KVY  337   |    9|
-|ALO  279 |SUT  270 |HAM  286 |VER  335   |   13|
-|HAM  280 |GRO  267 |BOT  285 |HAM  331   | <NA>|
-|ROS  279 |ROS  267 |ROS  283 |PER  334   | <NA>|
-|GRO  276 |GUT  265 |HUL  283 |MAS  332   | <NA>|
-|GUT  275 |RAI  265 |PER  281 |ROS  331   | <NA>|
+|RAI |284 |BIA |273 |MAS |286 |KVY |337   |    9|
+|ALO |279 |SUT |270 |HAM |286 |VER |335   |   13|
+|HAM |280 |GRO |267 |BOT |285 |HAM |331   | <NA>|
+|ROS |279 |ROS |267 |ROS |283 |PER |334   | <NA>|
+|GRO |276 |GUT |265 |HUL |283 |MAS |332   | <NA>|
+|GUT |275 |RAI |265 |PER |281 |ROS |331   | <NA>|
 
 Last column:
 Cars on track
