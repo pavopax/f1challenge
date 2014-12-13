@@ -14,6 +14,18 @@
 library(dplyr)
 library(reshape2)
 
+## FUNCTIONS
+###############################################################################
+maxit <- function(x){
+    ## if character, return it
+    ## if has number, take max
+    if grep("\w", x) then return x
+    else return 
+
+
+
+
+
 ## DATA STEPS
 ###############################################################################
 homeDir <- "/Users/pawel/github/f1challenge/"
@@ -33,6 +45,7 @@ speed2 <- speed %>% group_by(column, row) %>%
 
 ## now, to nice table
 speedx <- dcast(speed2, row ~ column, value.var = "last")
+speedx <- speedx[,-1]
 
 
 
@@ -50,4 +63,7 @@ filter(qual, row==2)
 summary(speed)
 table(speed$value)
 
+sx <- speed[1:150,]
+so <- tbl_df(dcast(speed, row+messagecount ~column, value.var="value"))
+names(so) <- c("row", "msg", "col1", "col2")
 

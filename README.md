@@ -31,12 +31,12 @@ Some speeds, by Driver and Location (according to official names):
 |GRO |276 |GUT |265 |HUL |283 |MAS |332   | <NA>|
 |GUT |275 |RAI |265 |PER |281 |ROS |331   | <NA>|
 
-Last column:
-Cars on track<br>
-Cars in pits
+Last column:  
+Cars on track (9)  
+Cars in pits (13)  
 
 Inter. = Intermediate
 
-## next steps:
+## next steps?
 visualize dashboard with D3. ref:<br>
 http://bl.ocks.org/LeeMendelowitz/11383724
